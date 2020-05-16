@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Recovery Password</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDwLLnVJ68jtyuw2TeLsd5vkdmUN85xzrc",
+            authDomain: "sistema-de-riego-52d38.firebaseapp.com",
+            databaseURL: "https://sistema-de-riego-52d38.firebaseio.com",
+            projectId: "sistema-de-riego-52d38",
+            storageBucket: "sistema-de-riego-52d38.appspot.com",
+            messagingSenderId: "1078905293995"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/autentificacion.js"></script>
+</head>
+
+<body>
+
+    <div class="contenedor-form">
+        <div id="recover_id" class="formulario">
+            <h2>Recuperar Contraseña</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" id="emailO_field" required>
+                <input type="sumbit" value="Recuperar Contraseña" onclick="recoveryPass()">
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

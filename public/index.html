@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDwLLnVJ68jtyuw2TeLsd5vkdmUN85xzrc",
+            authDomain: "sistema-de-riego-52d38.firebaseapp.com",
+            databaseURL: "https://sistema-de-riego-52d38.firebaseio.com",
+            projectId: "sistema-de-riego-52d38",
+            storageBucket: "sistema-de-riego-52d38.appspot.com",
+            messagingSenderId: "1078905293995"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span>
+                    Crear Cuenta
+                </span>
+        </div>
+        <div id="login_div" class="formulario">
+            <h2>Iniciar Sesion</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" id="email1_field" required>
+                <input type="password" placeholder="Contraseña" id="password1_field" required>
+                <input type="sumbit" value="Iniciar Sesion" onclick="login()" readonly="readonly">
+            </form>
+        </div>
+        <div id="create_div" class="formulario">
+            <h2>Crea tu cuenta</h2>
+            <form action="#">
+                <input type="text" placeholder="Correo Electronico" id="emailR_field" required>
+                <input type="password" placeholder="Contraseña" id="passwordR_field" required>
+                <input type="Sumbit" value=" Registrarse" onclick="registrar()">
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+<script src="assets/js/autentificacion.js"></script>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+
+</html>
